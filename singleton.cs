@@ -8,32 +8,29 @@ namespace Sandbox
 {
     public class Singleton
     {
-        private static readonly object mutex = new object();
-        private static volatile Singleton instance;
+        private static class SingletonHolder
+        {
+            //When type constructor is called, CLI wil handle memroy races, not need of 'volatile' keywords 
+            internal static readonly Singleton instance = new Singleton();
+        
+            //empty static constructor for .Net 4+ - forces laziness!
+            //only execute once
+            static SingletonHolder() {}
+        }
+        
+        
+        //override public constructor
         private Singleton()
         {
-        
+            Console.WriteLine("Singleton constructor");
         }
 
-        public static Singleton Instance
+        public static Singleton Instance { get { return SingletonHolder.instance; } }
+
+        public static void SayHi()
         {
-            get
-            {
-                if (instance == null)
-                {
-                    lock (mutex)
-                    {
-                        if (instance == null)
-                        {
-                            instance = new Singleton();
-                        }
-                        
-                    }
-                }
-                return instance;
-            }
+            Console.WriteLine("Hi there!");
         }
-
         public void DoSomeThing()
         {
             
