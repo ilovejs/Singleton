@@ -1,0 +1,8 @@
+c:\users\mz\documents\visual studio 2013\Projects\Singleton\Singleton\bin\Debug\Sandbox.exe.config
+c:\users\mz\documents\visual studio 2013\Projects\Singleton\Singleton\obj\Debug\Singleton.csprojResolveAssemblyReference.cache
+c:\users\mz\documents\visual studio 2013\Projects\Singleton\Singleton\bin\Debug\Sandbox.exe
+c:\users\mz\documents\visual studio 2013\Projects\Singleton\Singleton\bin\Debug\Sandbox.pdb
+c:\users\mz\documents\visual studio 2013\Projects\Singleton\Singleton\bin\Debug\nunit.framework.dll
+c:\users\mz\documents\visual studio 2013\Projects\Singleton\Singleton\bin\Debug\nunit.framework.xml
+c:\users\mz\documents\visual studio 2013\Projects\Singleton\Singleton\obj\Debug\Sandbox.exe
+c:\users\mz\documents\visual studio 2013\Projects\Singleton\Singleton\obj\Debug\Sandbox.pdb
